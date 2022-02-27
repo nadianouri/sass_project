@@ -1,0 +1,149 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: #ffff;
+  font-family: "Mulish", sans-serif;
+  font-size: 18px;
+  color: #111111;
+  padding: 0px 125px;
+}
+
+.sect-one {
+  max-width: 1000px;
+  margin: 62px 0px;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+nav ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  left: 60px;
+}
+nav ul li {
+  margin-left: 29px;
+}
+nav a {
+  text-decoration: none;
+  color: #111111;
+}
+nav a:hover {
+  color: #4A4FF2;
+}
+
+.sect-two h4 {
+  color: #4A4FF2;
+}
+.sect-two p {
+  font-size: 40px;
+  line-height: 60px;
+  width: 635px;
+  height: 191px;
+}
+.sect-two span {
+  color: #4A4FF2;
+}
+.sect-two h6 {
+  position: relative;
+  top: 145px;
+  left: 120px;
+  opacity: 60%;
+}
+.sect-two__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+h6::after {
+  content: "";
+  background-color: #111111;
+  opacity: 60%;
+  position: absolute;
+  top: -9px;
+  left: 0;
+  height: 2px;
+  width: 30px;
+}
+
+.sect-three {
+  width: 1000px;
+  display: -ms-grid;
+  display: grid;
+  position: relative;
+  top: 100px;
+  -ms-grid-columns: 30% 1em 30% 1em auto;
+  grid-template-columns: 30% 30% auto;
+  row-gap: 20px;
+  -webkit-column-gap: 1em;
+     -moz-column-gap: 1em;
+          column-gap: 1em;
+}
+
+.pic-4 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+.pic-5 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+.pic-6 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+}
+
+.pic-7 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+.pic-8 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+.pic-9 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+}
+
+.pic-10 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+.pic-11 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+.pic-12 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+}

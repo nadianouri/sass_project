@@ -24,7 +24,7 @@ body {
     color: $body-font-color;
     padding: 0px 125px;
 }
-.section-one {
+.sect-one {
     max-width: 1000px;
     margin: 62px 0px; 
 }
@@ -52,7 +52,7 @@ nav {
         }
     }
 }
-.section-two {
+.sect-two {
 
     h4 {
         color:$heading-color ;
@@ -73,6 +73,9 @@ nav {
         opacity:$sub-text-opacity;
 
     }
+&__text {
+    display: flex;  
+    }
 }
 h6::after {
     content:"";
@@ -84,7 +87,57 @@ h6::after {
     height: 2px;
     width: 30px;
 }
-.section-two__text {
-    display: flex;  
+
+.sect-three {
+    width: 1000px;
+    display: grid;
+    position: relative;
+    top:100px;
+    grid-template-columns: 30% 30% auto;
+    row-gap: 20px;
+    column-gap: 1em;
+} 
+.pic-4 {
+    grid-column: 1/2;
+
 }
+
+.pic-5 {
+    grid-column: 2/3;
+
+}
+.pic-6 {
+    grid-column: 3/4;
+
+}
+
+.pic-7 {
+    grid-column: 1/2;
+
+}
+
+.pic-8 {
+    grid-column: 2/3;
+
+}
+
+.pic-9 {
+    grid-column: 3/4;
+
+}
+
+.pic-10 {
+    grid-column: 1/2;
+}
+
+.pic-11 {
+    grid-column: 2/3;
+}
+ 
+.pic-12 {
+    grid-column: 3/4;
+}
+    
+
+
     

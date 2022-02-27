@@ -87,56 +87,53 @@ h6::after {
     height: 2px;
     width: 30px;
 }
-
 .sect-three {
-    width: 1000px;
+    width: 1110px;
+    height: 1960px;
     display: grid;
-    position: relative;
-    top:100px;
-    grid-template-columns: 30% 30% auto;
-    row-gap: 20px;
-    column-gap: 1em;
-} 
-.pic-4 {
-    grid-column: 1/2;
-
+    margin-top: 100px;
+    grid-template-rows: 17.9% 2.4% 8.4% 8.2% 5.5% 5.4% 14.5% 2.1% 8.4% 18%;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    justify-items: center;
 }
-
-.pic-5 {
-    grid-column: 2/3;
-
-}
-.pic-6 {
-    grid-column: 3/4;
-
-}
-
-.pic-7 {
-    grid-column: 1/2;
-
-}
-
-.pic-8 {
-    grid-column: 2/3;
-
-}
-
-.pic-9 {
-    grid-column: 3/4;
-
-}
-
-.pic-10 {
-    grid-column: 1/2;
-}
-
-.pic-11 {
-    grid-column: 2/3;
-}
- 
-.pic-12 {
-    grid-column: 3/4;
-}
+    .pic-1 {
+        grid-area: 1 / 1 / 3 / 2; 
+    }
+    .pic-2 {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+    .pic-3 {
+        grid-area: 1 / 3 / 4 / 4;
+    }
+    .pic-4 {
+        grid-area: 3 / 1 / 6 / 2;
+    }
+    .pic-5 {
+        grid-area: 2 / 2 / 5 / 3;
+    }
+    .pic-6 {
+        grid-area: 4 / 3 / 7 / 4;
+    }
+    .pic-7 {
+        grid-area: 6 / 1 / 9 / 2;
+    }
+    .pic-8 {
+        grid-area: 5 / 2 / 8 / 3;
+    }
+    .pic-9 { 
+        grid-area: 7 / 3 / 10 / 4;
+    }
+    .pic-10 {
+        grid-area: 9 / 1 / 11 / 2;
+    }
+    .pic-11 {
+        grid-area: 8 / 2 / 11 / 3;
+    }
+    .pic-12 {
+        grid-area: 10 / 3 / 11 / 4;
+    } 
+    
     
 
 

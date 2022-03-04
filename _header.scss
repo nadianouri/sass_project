@@ -1,0 +1,33 @@
+// variables: 
+$body-font-color:#111111;
+$links-color:$body-font-color;
+$heading-color:#4A4FF2;
+
+header {
+        max-width: 1000px;
+        margin: 62px 0px; 
+    
+        nav {
+        display: flex;
+        justify-content: space-between;
+    
+            ul {
+                list-style-type: none;
+                display: flex; 
+                position: relative;
+                left:60px;
+            
+                li {
+                margin-left: 29px;
+                }
+            }
+            a {
+                text-decoration: none; 
+                color: $links-color ;
+    
+                &:hover {
+                    color:$heading-color ;
+                }
+            }
+        }
+    }

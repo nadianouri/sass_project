@@ -1,198 +1,240 @@
-
 @import 'header';
 @import 'footer';
- 
+
 // variables:
 
 // -- color 
-$body-color: #ffff;
-$body-font-color:#111111;
-$heading-color:#4A4FF2;
-$links-color:$body-font-color;
+$body-color      : #ffff;
+$body-font-color :#111111;
+$heading-color   :#4A4FF2;
+$links-color     :$body-font-color;
 $sub-text-opacity:60%;
 
 // -- fonts
-$body-font:'Mulish',sans-serif;
-$body-font-size:18px;
+$body-font:'Mulish',
+sans-serif;
+$body-font-size :18px;
 $title-font-size:40px;
 $body-font-style: bold;
 
 * {
     box-sizing: border-box;
-    padding: 0px;
-    margin: 0px;
+    padding   : 0px;
+    margin    : 0px;
 }
+
 body {
     background-color: $body-color;
-    font-family: $body-font;
-    font-size: $body-font-size;
-    color: $body-font-color;
-    padding: 0px 125px;
+    font-family     : $body-font;
+    font-size       : $body-font-size;
+    color           : $body-font-color;
+    padding         : 0px 125px;
 }
+
 .sect-one {
 
     h4 {
-        color:$heading-color ;
-     }
-    p {
-        font-size: $title-font-size;
-        line-height: 60px; 
-        width: 635px;
-        height: 191px;
+        color: $heading-color;
     }
+
+    p {
+        font-size  : $title-font-size;
+        line-height: 60px;
+        width      : 635px;
+        height     : 191px;
+    }
+
     span {
         color: $heading-color;
     }
+
     h6 {
         position: relative;
-        top: 145px;
-        left: 120px;
-        opacity:$sub-text-opacity;
+        top     : 145px;
+        left    : 120px;
+        opacity : $sub-text-opacity;
     }
 
-&__text {
-    display: flex;  
-}
+    &__text {
+        display: flex;
+    }
 
 }
+
 h6::after {
-    content:"";
-    background-color:$body-font-color;
-    opacity: $sub-text-opacity;
-    position: absolute;
-    top:-9px;
-    left: 0;
-    height: 2px;
-    width: 30px;
+    content         : "";
+    background-color: $body-font-color;
+    opacity         : $sub-text-opacity;
+    position        : absolute;
+    top             : -9px;
+    left            : 0;
+    height          : 2px;
+    width           : 30px;
 }
+
 .sect-two {
-    width: 1110px;
-    height: 1960px;
-    display: grid;
-    margin-top: 100px;
-    grid-template-rows: 17.9% 2.4% 8.4% 8.2% 5.5% 5.4% 14.5% 2.1% 8.4% 18%;
+    width                : 1110px;
+    height               : 1960px;
+    display              : grid;
+    margin-top           : 100px;
+    grid-template-rows   : 17.9% 2.4% 8.4% 8.2% 5.5% 5.4% 14.5% 2.1% 8.4% 18%;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-    justify-items: center;
-}
-    .pic-1 {
-        grid-area: 1 / 1 / 3 / 2; 
+    gap                  : 20px;
+    justify-items        : center;
+
+    &:hover {
+        opacity: 0.8;
+        cursor : pointer;
     }
+
+    .pic-1 {
+        grid-area: 1 / 1 / 3 / 2;
+    }
+
     .pic-2 {
         grid-area: 1 / 2 / 2 / 3;
     }
+
     .pic-3 {
         grid-area: 1 / 3 / 4 / 4;
     }
+
     .pic-4 {
         grid-area: 3 / 1 / 6 / 2;
     }
+
     .pic-5 {
         grid-area: 2 / 2 / 5 / 3;
     }
+
     .pic-6 {
         grid-area: 4 / 3 / 7 / 4;
     }
+
     .pic-7 {
         grid-area: 6 / 1 / 9 / 2;
     }
+
     .pic-8 {
         grid-area: 5 / 2 / 8 / 3;
     }
-    .pic-9 { 
+
+    .pic-9 {
         grid-area: 7 / 3 / 10 / 4;
     }
+
     .pic-10 {
         grid-area: 9 / 1 / 11 / 2;
     }
+
     .pic-11 {
         grid-area: 8 / 2 / 11 / 3;
     }
+
     .pic-12 {
         grid-area: 10 / 3 / 11 / 4;
-    } 
-.sect-three {
-    width: 1000px;
-    height: 106px;
-    margin-top: 79px;
-    display: grid;
-    grid-template-columns: 70% 15% 15%;
-    grid-template-rows: repeat(10,10%);
-    gap: 2em;
+    }
+
 }
+
+.sect-three {
+    width                : 1000px;
+    height               : 106px;
+    margin-top           : 79px;
+    display              : grid;
+    grid-template-columns: 70% 15% 15%;
+    grid-template-rows   : repeat(10, 10%);
+    gap                  : 2em;
+}
+
 .sect-three__para-4 {
     grid-area: 2 / 2 / 3 / 3;
 }
+
 .sect-three__para-5 {
     grid-area: 2 / 3 / 3 / 4;
 }
+
 .sect-three__para-6 {
     grid-area: 3 / 2 / 4 / 3;
 
 }
+
 .sect-three__para-7 {
     grid-area: 3 / 3 / 4 / 3;
 
 }
+
 .sect-three__para-1 {
-    width:635px;
-    height:106px;
-    font-family:$body-font ;
-    font-style: $body-font-style;
-    font-size: 28px;
+    width      : 635px;
+    height     : 106px;
+    font-family: $body-font;
+    font-style : $body-font-style;
+    font-size  : 28px;
     line-height: 38px;
 }
+
 .sect-four {
-    width: 1110px;
-    height: 411px;
-    margin-top: 101px;
-    border-top: 2px solid #D8D8D8;
-    border-bottom: 2px solid #D8D8D8;
-    padding-top: 50px;
-    display: grid;
+    width                : 1110px;
+    height               : 411px;
+    margin-top           : 101px;
+    border-top           : 2px solid #D8D8D8;
+    border-bottom        : 2px solid #D8D8D8;
+    padding-top          : 50px;
+    display              : grid;
     grid-template-columns: 40% 20% 20% 20%;
-    grid-template-rows: repeat(10,10%);
-    column-gap: 2em;
+    grid-template-rows   : repeat(10, 10%);
+    column-gap           : 2em;
 }
+
 .sect-four__para-1 {
-    grid-area: 2 / 3 / 3 / 4; 
+    grid-area: 2 / 3 / 3 / 4;
 }
+
 .sect-four__title {
     grid-area: 7 / 2 / 8 / 3;
 }
+
 .sect-four__sub-title {
     grid-area: 7 / 3 / 8 / 4;
 }
-.sect-four__para-2{
+
+.sect-four__para-2 {
     grid-area: 7 / 4 / 8 / 5;
 }
-.sect-four__para-3{
+
+.sect-four__para-3 {
     grid-area: 8 / 3 / 9 / 4;
 }
 
 .sect-five {
-    width: 1110px;
-    height: 411px;
-    border-bottom: 2px solid #D8D8D8;
-    padding-top: 50px;
-    display: grid;
+    width                : 1110px;
+    height               : 411px;
+    border-bottom        : 2px solid #D8D8D8;
+    padding-top          : 50px;
+    display              : grid;
     grid-template-columns: 40% 20% 20% 20%;
-    grid-template-rows: repeat(10,10%);
-    column-gap: 2em;
+    grid-template-rows   : repeat(10, 10%);
+    column-gap           : 2em;
 
 }
+
 .sect-five__para-1 {
-    grid-area: 2 / 3 / 3 / 4; 
+    grid-area: 2 / 3 / 3 / 4;
 }
+
 .sect-five__title {
     grid-area: 6 / 2 / 7 / 3;
 }
+
 .sect-five__sub-title {
     grid-area: 6 / 3 / 7 / 4;
 }
-.sect-five__para-2{
+
+.sect-five__para-2 {
     grid-area: 7 / 3 / 8 / 4;
 }
-.sect-five__para-3{
+
+.sect-five__para-3 {
     grid-area: 6 / 4 / 7 / 5;
 }

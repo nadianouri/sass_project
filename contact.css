@@ -27,6 +27,7 @@ header nav a {
 }
 header nav a:hover {
   color: #4A4FF2;
+  text-decoration: underline;
 }
 
 footer {
@@ -59,6 +60,7 @@ footer .footer-menu a {
 }
 footer .footer-menu a:hover {
   color: #4A4FF2;
+  text-decoration: underline;
 }
 
 .footer-icons {
@@ -104,28 +106,32 @@ body {
   margin-top: 22px;
   font-size: 16px;
 }
-.sect-one .form {
+.sect-one form {
   width: 475px;
   height: 291px;
+  border: none;
 }
-.sect-one .form h4 {
+.sect-one form input,
+.sect-one form textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #a7a1a1;
   text-transform: capitalize;
   color: #a7a1a1;
-  border-bottom: 2px solid #a7a1a1;
-  padding: 10px 0px;
-  line-height: 30px;
+  padding: 20px;
+  text-transform: capitalize;
+  color: #a7a1a1;
 }
-.sect-one .form button {
+.sect-one form input[type=submit] {
   width: 125px;
   height: 50px;
   border: none;
   margin-top: 38px;
-  font-size: 16px;
   background-color: #4A4FF2;
   color: white;
   text-transform: capitalize;
 }
-.sect-one .form button:hover {
+.sect-one form input[type=submit]:hover {
   background-color: #c85fe2;
   cursor: pointer;
 }

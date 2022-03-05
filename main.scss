@@ -15,6 +15,7 @@ $sub-text-opacity:60%;
 $body-font:'Mulish',sans-serif;
 $body-font-size:18px;
 $title-font-size:40px;
+$body-font-style: bold;
 
 * {
     box-sizing: border-box;
@@ -137,7 +138,7 @@ h6::after {
     width:635px;
     height:106px;
     font-family:$body-font ;
-    font-style: bold;
+    font-style: $body-font-style;
     font-size: 28px;
     line-height: 38px;
 }
